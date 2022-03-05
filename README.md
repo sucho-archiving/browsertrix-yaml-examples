@@ -40,3 +40,31 @@ So the whole file will read
           scopeType: "host"
           exclude:
             - .*iccaldate=.*
+            
+            
+## Making Sure You Don't Go Out Of Depth
+
+Some websites have recursive links.  They can look like this
+
+    '{"url":"https://nmiu.org/lektoriy/181-ekskursiji-kontent/vysta/3/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/exponat-tyzhnya","seedId":0,"depth":48}'
+
+If you notice this kind of pattern in the URLs of a site that never seems to end, avoid getting stuck in such a trap by adding the "depth" flag to the yaml file:
+
+    collection: "collection-litme-com-ua"
+    workers: 16
+    saveState: always
+    seeds:
+        - url: http://collection.litme.com.ua/
+          include: 
+            - .*collection\.litme\.com.ua.*
+          scopeType: "host"
+          depth: 25
+
+This will tell the tool to only follow a given path to a depth of 25 different URL clicks, so use it with care!
+
+In the example given at the start of this section, exclude can also be used with 
+    
+    exclude: 
+      - .*index.php/index.php.*
+      
+as this was what was causing the recursion
