@@ -10,9 +10,7 @@ This includes all sub domains like abc.collection.litme.com.ua, handles http:// 
     saveState: always
     seeds:
         - url: http://collection.litme.com.ua/
-          include: 
-            - .*collection\.litme\.com.ua.*
-          scopeType: "host"
+          scopeType: "domain"
     
 ## Excluding trouble
 
