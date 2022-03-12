@@ -10,18 +10,32 @@ This includes all sub domains like abc.collection.litme.com.ua, handles http:// 
     workers: 16
     saveState: always
 
-    # A few examples that exclude parts of a page from being fetched and recorded. Feel free to add more
+    # A few examples that exclude parts of a page from being fetched and recorded.
     blockRules:
+
+      # Unnecessary trackers
       - url: google-analytics.com
       - url: googletagmanager.com
+      - url: googlesyndication.com
       - url: yandex.ru
+      - url: liveinternet.ru
+      - url: hotlog.ru
+      - url: openstat.net
       - url: mycounter.ua
       - url: facebook.(com|net)
-      #- url: youtube.com/embed/ # Uncomment this line to skip the recording of embedded YouTube videos
+
+      # Malware
+      - url: www.acint.net   # spam-seo.sape malware
+      - url: news.2xclick.ru # mwblacklisted35 malware
+
+      # Non-threatened resources that are bandwidth-intensive and perhaps not
+      # a current priority. Uncomment these rules to bypass recording.
+      #- url: youtube.com/embed/ # Embedded YouTube videos
+      #- url: w.soundcloud.com   # Embedded SoundCloud tracks
 
     seeds:
-        - url: http://collection.litme.com.ua/
-          scopeType: "domain"
+      - url: http://collection.litme.com.ua/
+        scopeType: "domain"
 
 ## Excluding trouble
 
