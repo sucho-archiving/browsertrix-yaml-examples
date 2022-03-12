@@ -1,6 +1,7 @@
 # browsertrix-yaml-examples
 YAML files for including and excluding things
 
+See the [browsertrix project](https://github.com/webrecorder/browsertrix-crawler) for more general documentation.
 
 ## Default and handy starter file
 This includes all sub domains like abc.collection.litme.com.ua, handles http:// to https:// conversions & subdomains.
@@ -8,10 +9,20 @@ This includes all sub domains like abc.collection.litme.com.ua, handles http:// 
     collection: "collection-litme-com-ua"
     workers: 16
     saveState: always
+
+    # A few examples that exclude parts of a page from being fetched and recorded. Feel free to add more
+    blockRules:
+      - url: google-analytics.com
+      - url: googletagmanager.com
+      - url: yandex.ru
+      - url: mycounter.ua
+      - url: facebook.(com|net)
+      #- url: youtube.com/embed/ # Uncomment this line to skip the recording of embedded YouTube videos
+
     seeds:
         - url: http://collection.litme.com.ua/
           scopeType: "domain"
-    
+
 ## Excluding trouble
 
 If you notice that a crawl is collecting duplicate links due to parameters, like 
