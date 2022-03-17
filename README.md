@@ -25,8 +25,9 @@ This includes all sub domains like abc.collection.litme.com.ua, handles http:// 
       - url: facebook.(com|net)
 
       # Malware
-      - url: www.acint.net   # spam-seo.sape malware
-      - url: news.2xclick.ru # mwblacklisted35 malware
+      - url: www.acint.net       # spam-seo.sape malware
+      - url: news.2xclick.ru     # mwblacklisted35 malware
+      - url: culturaltracking.ru # culturaltracking malware
 
       # Non-threatened resources that are bandwidth-intensive and perhaps not
       # a current priority. Uncomment these rules to bypass recording.
