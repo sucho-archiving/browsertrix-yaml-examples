@@ -28,6 +28,7 @@ This includes all sub domains like abc.collection.litme.com.ua, handles http:// 
       - url: www.acint.net       # spam-seo.sape malware
       - url: news.2xclick.ru     # mwblacklisted35 malware
       - url: culturaltracking.ru # culturaltracking malware
+      - url: sape.ru             # sape backlinks SEO malware
 
       # Non-threatened resources that are bandwidth-intensive and perhaps not
       # a current priority. Uncomment these rules to bypass recording.
