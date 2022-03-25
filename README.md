@@ -92,3 +92,24 @@ In the example given at the start of this section, exclude can also be used with
       - .*index.php/index.php.*
       
 as this was what was causing the recursion
+
+# Handling an Enormous Site like WikiMedia  
+
+This is an example crawl of a WikiMedia site, reducing an enormous, unfinishable crawl to a manageable one, by ignoring all wiki paraphernalia (history pages, etc.). 
+
+    collection: "wiki-library-kr-ua"
+    workers: 16
+    saveState: always
+    seeds:
+    - url: https://wiki.library.kr.ua/
+    include: .*\.wiki\.library\.kr\.ua/
+    exclude: 
+      - .*action\=.*
+      - .*page\=.*
+      - .*limit\=.*
+      - .*oldid\=.*
+      - .*title=%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0\:.*
+      - .*returnto\=.*
+    scopeType: "host"
+    
+Line 12 tells it to ignore links with titles beginning with the Ukrainian word for "special" followed by a colon: that might need to be reconfigured for each site.
