@@ -1,0 +1,8 @@
+collection: "chtei-knteu-cv-ua"
+workers: 6
+saveState: always
+seeds:
+  - url: http://chtei-knteu.cv.ua/ua/index/
+    scopeType: "domain"
+    exclude:
+      - .*\/\/\/.*

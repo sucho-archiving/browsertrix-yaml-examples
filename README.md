@@ -3,6 +3,8 @@ YAML files for including and excluding things
 
 See the [browsertrix project](https://github.com/webrecorder/browsertrix-crawler) for more general documentation.
 
+Full sample configurations that were helpful for crawling certain websites are available in the subdirectiories, such as `biph-kiev-ua/crawl-config.yaml`. 
+
 ## Default and handy starter file
 This includes all sub domains like abc.collection.litme.com.ua, handles http:// to https:// conversions & subdomains.
 
@@ -28,6 +30,7 @@ This includes all sub domains like abc.collection.litme.com.ua, handles http:// 
       - url: www.acint.net       # spam-seo.sape malware
       - url: news.2xclick.ru     # mwblacklisted35 malware
       - url: culturaltracking.ru # culturaltracking malware
+      - url: sape.ru             # sape backlinks SEO malware
 
       # Non-threatened resources that are bandwidth-intensive and perhaps not
       # a current priority. Uncomment these rules to bypass recording.

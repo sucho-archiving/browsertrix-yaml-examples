@@ -1,0 +1,6 @@
+collection: "lpba-org-ua"
+workers: 6
+saveState: always
+seeds:
+  - url: http://lpba.org.ua/
+    scopeType: "domain"

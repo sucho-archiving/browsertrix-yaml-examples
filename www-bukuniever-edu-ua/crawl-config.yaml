@@ -1,0 +1,6 @@
+collection: "www-bukuniver-edu-ua"
+workers: 6
+saveState: always
+seeds:
+  - url: http://www.bukuniver.edu.ua/
+    scopeType: "domain"
