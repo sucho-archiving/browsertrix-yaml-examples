@@ -1,0 +1,13 @@
+collection: "biph-kiev-ua"
+workers: 6
+saveState: always
+seeds:
+  - url: http://biph.kiev.ua/
+    scopeType: "domain"
+    exclude:
+      - .*action\=.*
+      - .*limit\=.*
+      - .*oldid\=.*
+      - .*title=Special:.*
+      - .*returnto\=.*
+      - .*cgiirbis_64.exe.*

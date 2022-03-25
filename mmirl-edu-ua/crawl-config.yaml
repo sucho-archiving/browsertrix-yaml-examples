@@ -1,0 +1,6 @@
+collection: "mmirl-edu-ua"
+workers: 6
+saveState: always
+seeds:
+  - url: http://mmirl.edu.ua/
+    scopeType: "domain"
