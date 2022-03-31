@@ -1,0 +1,16 @@
+collection: ldufk-edu-ua
+workers: 8
+saveState: always
+seeds:
+  - url: http://ldufk.edu.ua
+    include:
+      - .*ldufk\.edu\.ua/index\.php.*
+      - .*ldufk\.edu\.ua/index\.php/abiturijentu.*
+      - .*ldufk\.edu\.ua/index\.php/golovna\-1.*
+      - .*ldufk\.edu\.ua/index\.php/studentam.*
+      - .*ldufk\.edu\.ua/index\.php/proects\-international.*
+      - .*ldufk\.edu\.ua/index\.php/contactsINF.*
+    exclude:
+      - .*index.php.*&lang\=.*
+      - .*statisticsYear.*"
+    scopeType: host
