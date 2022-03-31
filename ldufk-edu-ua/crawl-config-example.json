@@ -1,0 +1,28 @@
+{
+  "seeds": [
+    "http://ldufk.edu.ua"
+  ],
+  "scopeType": "host",
+  "include": [
+    ".*ldufk.edu.ua/index.php.*",
+    ".*ldufk.edu.ua/index.php/abiturijentu.*",
+    ".*ldufk.edu.ua/index.php/golovna-1.*",
+    ".*ldufk.edu.ua/index.php/studentam.*",
+    ".*ldufk.edu.ua/index.php/proects-international.*",
+    ".*ldufk.edu.ua/index.php/contactsINF.*"
+  ],
+  "exclude": [
+    ".*index.php.*&lang=.*",
+    ".*statisticsYear.*"
+  ],
+  "depth": -1,
+  "limit": 450000,
+  "extraHops": 0,
+  "behaviorTimeout": null,
+  "workers": 8,
+  "headless": null,
+  "generateWACZ": null,
+  "combineWARC": null,
+  "logging": null,
+  "behaviors": "autoscroll,autoplay,autofetch,siteSpecific"
+}

@@ -1,0 +1,18 @@
+{
+    "seeds": [
+      "http://lpba.org.ua/"
+    ],
+    "scopeType": "domain",
+    "include": null,
+    "exclude": null,
+    "depth": -1,
+    "limit": 450000,
+    "extraHops": 0,
+    "behaviorTimeout": null,
+    "workers": 6,
+    "headless": null,
+    "generateWACZ": null,
+    "combineWARC": null,
+    "logging": null,
+    "behaviors": "autoscroll,autoplay,autofetch,siteSpecific"
+  }
