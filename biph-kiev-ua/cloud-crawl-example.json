@@ -3,7 +3,6 @@
       "http://biph.kiev.ua/"
     ],
     "scopeType": "domain",
-    "include": null,
     "exclude": [
         ".*action=.*",
         ".*limit=.*",
@@ -12,14 +11,5 @@
         ".*returnto=.*",
         ".*cgiirbis_64.exe.*"
     ],
-    "depth": -1,
-    "limit": 500000,
-    "extraHops": 0,
-    "behaviorTimeout": null,
-    "workers": 6,
-    "headless": null,
-    "generateWACZ": null,
-    "combineWARC": null,
-    "logging": null,
-    "behaviors": "autoscroll,autoplay,autofetch,siteSpecific"
+    "workers": 6
   }
