@@ -1,5 +1,5 @@
 collection: "biblioteka-filiya13-edukit-kr-ua"
-workers: 8
+workers: 4
 saveState: always
 seeds:
   - url: http://biblioteka-filiya13.edukit.kr.ua/
