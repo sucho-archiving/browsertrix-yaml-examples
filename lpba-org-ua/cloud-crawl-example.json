@@ -1,0 +1,7 @@
+{
+    "seeds": [
+      "http://lpba.org.ua/"
+    ],
+    "scopeType": "domain",
+    "workers": 6
+  }

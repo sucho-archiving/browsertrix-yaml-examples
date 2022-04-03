@@ -1,0 +1,15 @@
+{
+    "seeds": [
+      "http://biph.kiev.ua/"
+    ],
+    "scopeType": "domain",
+    "exclude": [
+        ".*action=.*",
+        ".*limit=.*",
+        ".*oldid=.*",
+        ".*title=Special:.*",
+        ".*returnto=.*",
+        ".*cgiirbis_64.exe.*"
+    ],
+    "workers": 6
+  }

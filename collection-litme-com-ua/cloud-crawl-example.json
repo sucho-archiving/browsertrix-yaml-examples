@@ -1,0 +1,29 @@
+{
+    "seeds": [
+        "http://collection.litme.com.ua/"
+    ],
+    "scopeType": "host",
+    "include": [
+        ".*collection.litme.com.ua.*"
+    ],
+    "exclude": [
+        ".*index.php/index.php.*"
+    ],
+    "depth": 25,
+    "workers": 16,
+    "blockRules": [
+        {"url": "google-analytics.com"},
+        {"url": "googletagmanager.com"},
+        {"url": "googlesyndication.com"},
+        {"url": "yandex.ru"},
+        {"url": "liveinternet.ru"},
+        {"url": "hotlog.ru"},
+        {"url": "openstat.net"},
+        {"url": "mycounter.ua"},
+        {"url": "facebook.(com|net)"},
+        {"url": "www.acint.net"},
+        {"url": "news.2xclick.ru"},
+        {"url": "culturaltracking.ru"},
+        {"url": "sape.ru"}
+    ]
+  }

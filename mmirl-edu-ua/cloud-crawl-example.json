@@ -1,0 +1,7 @@
+{
+    "seeds": [
+      "http://mmirl.edu.ua"
+    ],
+    "scopeType": "domain",
+    "workers": 6
+  }

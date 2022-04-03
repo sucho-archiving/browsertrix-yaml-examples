@@ -1,0 +1,10 @@
+{
+    "seeds": [
+      "http://chtei-knteu.cv.ua/ua/index"
+    ],
+    "scopeType": "domain",
+    "exclude": [
+        ".*///.*"
+    ],
+    "workers": 6
+  }

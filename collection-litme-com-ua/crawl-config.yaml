@@ -1,0 +1,25 @@
+collection: "collection-litme-com-ua"
+workers: 16
+saveState: always
+blockRules:
+  - url: google-analytics.com
+  - url: googletagmanager.com
+  - url: googlesyndication.com
+  - url: yandex.ru
+  - url: liveinternet.ru
+  - url: hotlog.ru
+  - url: openstat.net
+  - url: mycounter.ua
+  - url: facebook.(com|net)
+  - url: www.acint.net       # spam-seo.sape malware
+  - url: news.2xclick.ru     # mwblacklisted35 malware
+  - url: culturaltracking.ru # culturaltracking malware
+  - url: sape.ru             # sape backlinks SEO malware
+seeds:
+  - url: http://collection.litme.com.ua/
+    include:
+      - .*collection\.litme\.com\.ua.*
+    exclude:
+      - .*index\.php/index\.php.*
+    scopeType: "host"
+    depth: 25
