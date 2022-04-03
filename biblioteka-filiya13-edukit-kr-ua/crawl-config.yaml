@@ -1,0 +1,10 @@
+collection: "biblioteka-filiya13-edukit-kr-ua"
+workers: 8
+saveState: always
+seeds:
+  - url: http://biblioteka-filiya13.edukit.kr.ua/
+    exclude:
+      - .*iccaldate=.*
+      - .+calendar/type/.*  # for calendars on edukit CMS
+      - .+/pn/\d+           # for pages of comments on edukit
+    scopeType: "domain"
